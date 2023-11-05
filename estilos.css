@@ -1,0 +1,120 @@
+/* Estilos generales */
+:root {
+  --primario: #000; /* Definición de variable de color primario */
+  --secundario: #89129e; /* Definición de variable de color secundario */
+  --blanco: #fff; /* Definición de variable de color blanco */
+  --negro: #000; /* Definición de variable de color negro */
+  --sencudariocolor: #B1AFAF; /* Definición de variable de otro color */
+  --fuentePrincipal: 'kanit', sans-serif; /* Definición de variable de fuente principal */
+  --colorp:#F94F05;/*Definicion de variable otro color*/
+}
+
+html {
+  box-sizing: border-box; /* Configuración de modelo de caja para todo el documento */
+   
+}
+
+body {
+  background-color: var(--secundario); /* Fondo del cuerpo usando la variable de color secundario */
+  background-image: url(imagenes/green_tree_desert-wallpaper-1920x1080.jpg); /* Establecimiento de una imagen de fondo */
+  font-family: 'Kanit', sans-serif; /* Configuración de la fuente principal */
+}
+
+#header {
+  width: 20rem; /* Ancho del encabezado */
+  font-family: var(--fuentePrincipal); /* Fuente para el encabezado */
+  display: inline; /* Mostrar el encabezado en línea con otros elementos */
+}
+
+
+h1,p{
+  position: absolute;
+
+}
+
+
+
+ul.nav {
+  position: relative; /* Posición relativa para el elemento de lista no ordenada */
+  list-style: none; /* Eliminación de los puntos de lista predeterminados */
+  padding: 0; /* Eliminación del relleno predeterminado de la lista */
+}
+
+ul.nav li {
+  display: inline; /* Mostrar elementos de lista en línea */
+  margin-right: 10px; /* Espacio entre elementos de lista (ajustar según preferencia) */
+  font-size: 100%; /* Tamaño de fuente para elementos de lista */
+  font-family: 'Raleway', sans-serif; /* Fuente para elementos de lista */
+  cursor: pointer;
+}
+/* Agrega un indicador de menú a la derecha de los elementos de la lista */
+ul.nav li::after {
+  content: '\25B6'; /* Código Unicode para una flecha hacia la derecha */
+  display: inline-block;
+  margin-left: 5px; /* Espacio entre el texto del elemento de la lista y la flecha */
+  color: var(--sencudariocolor); /* Color de la flecha (ajusta según tus preferencias) */
+  font-size: 1.2rem; /* Tamaño de la fuente de la flecha (ajusta según tus preferencias) */
+}
+ul.nav li img{
+  width: 50px;
+  height: auto;
+}
+
+.contenedor {
+  margin: 1rem; /* Margen en el contenedor */
+  text-align: center; /* Alineación del texto al centro en el contenedor */
+  padding: 1rem; /* Relleno en el contenedor */
+  position: relative; /* Posición relativa para el contenedor */
+  width: 100%;/*Ancho completo del contenerdo*/
+  height: 500px;/*Altura de la caja contenedora*/
+}
+.contenedor h1{
+  font-family: 'Kanit',sans-serif;
+  font-size: 2rem;
+  color: #89129e;
+  top: 60%;
+  left: 40%;
+}
+.contenedor p{
+  font-size: 1.5rem;
+  font-family: 'Raleway',sans-serif;
+  color: var(--colorp);
+  top: 70%;
+  left: 40%;
+}
+
+
+.signup-box{
+  display: inline-block;/* Hace que el contenedor sea en línea para rodear "Sign up" */
+  border: 1px solid var(--blanco);/* Agrega un borde alrededor del contenedor */
+  border-radius: 5px;/* Agrega bordes redondeados al contenedor */
+  padding: 5px 10px;/* Espaciado dentro del contenedor*/
+  margin-left: 10px;
+}
+.search-box {
+  float: right; /* Alinea el elemento de búsqueda a la derecha del encabezado */
+  margin-top: -40px;
+  margin-right: 100px;
+  
+}
+input[type="text"] {
+  padding: 5px; /* Espaciado dentro del campo de entrada */
+  border: none; /* Elimina el borde del campo de entrada */
+  border-radius: 5px; /* Agrega bordes redondeados al campo de entrada */
+}
+
+button {
+  background: none; /* Fondo transparente para el botón */
+  border: none; /* Elimina el borde del botón */
+  cursor: pointer;
+  outline: none;
+ 
+}
+button:hover{
+  cursor: pointer;
+}
+
+
+
+  
+
